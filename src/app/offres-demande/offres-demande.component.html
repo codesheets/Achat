@@ -25,150 +25,21 @@
 
 
 <div class="row">
-<div class="col-md-3 ">
+<div class="col-md-3"   *ngFor="let madescprod of Descprod ">
     <div class="card mb-3 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top img-fluid" src="../../assets/Image_projet/14.JPG" alt="Card image cap">
+    <a [routerLink]="[madescprod.categorie]"> <img class="card-img-top img-fluid" src={{madescprod.img}} alt="Card image cap"></a>
       <div class="card-body">
-        <h4 class="text-center">Titre N°1</h4>
+      <h4 class="text-center">{{madescprod.Nom}}</h4>
         <ul class="list-unstyled Lcard">
-          <li class="card-text font-size">Categorie: Location</li>
-          <li class="card-text">Lieux: Conakry</li>
-          <li class="card-text">Prix: 100 000 GNF</li>
-          <li class="card-text">Situation : A discuter</li>
-          <li class="card-text">Interesent pour: 12 personnes</li>
+          <li class="card-text font-size">Categorie: {{madescprod.categorie}}</li>
+          <li class="card-text">Lieux: {{madescprod.Lieu}}</li>
+          <li class="card-text">Prix: {{madescprod.Prix}}</li>
+          <li class="card-text">Situation : {{madescprod.Situation}}</li>
+          <li class="card-text">Interesent pour: {{madescprod.Interet}}</li>
       </ul>
         <div class="d-flex justify-content-center">
           
           <small class="text-muted">2h 6mn</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top" src="../../assets/Image_projet/2.JPG" alt="Card image cap">
-      <div class="card-body">
-        <h4>Titre N°2</h4>
-        <ul class="list-unstyled Lcard">
-          <li class="card-text font-size">Categorie: Location</li>
-          <li class="card-text">Lieux: Conakry</li>
-          <li class="card-text">Prix: 100 000 GNF</li>
-          <li class="card-text">Situation : A discuter</li>
-          <li class="card-text">Interesent pour: 12 personnes</li>
-      </ul>
-        <div class="d-flex justify-content-center align-items-center">
-          
-          <small class="text-muted">9 mins</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3">
-    <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top" src="../../assets/Image_projet/65.JPG" alt="Card image cap">
-      <div class="card-body">
-        <h3 class="h4">Titre N°3</h3>
-        <ul class="list-unstyled Lcard">
-          <li class="card-text font-size">Categorie: Location</li>
-          <li class="card-text">Lieux: Conakry</li>
-          <li class="card-text">Prix: 100 000 GNF</li>
-          <li class="card-text">Situation : A discuter</li>
-          <li class="card-text">Interesent pour: 12 personnes</li>
-      </ul>
-        <div class="d-flex justify-content-center align-items-center">
-          
-          <small class="text-muted">9 mins</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top" src="../../assets/Image_projet/87.JPG" alt="Card image cap">
-      <div class="card-body">
-        <ul class="list-unstyled Lcard">
-          <li class="card-text font-size">Categorie: Location</li>
-          <li class="card-text">Lieux: Conakry</li>
-          <li class="card-text">Prix: 100 000 GNF</li>
-          <li class="card-text">Situation : A discuter</li>
-          <li class="card-text">Interesent pour: 12 personnes</li>
-      </ul>
-        <div class="d-flex justify-content-center align-items-center">
-          
-          <small class="text-muted">9 mins</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top" src="../../assets/Image_projet/87.JPG" alt="Card image cap">
-      <div class="card-body">
-        <ul class="list-unstyled Lcard">
-          <li class="card-text font-size">Categorie: Location</li>
-          <li class="card-text">Lieux: Conakry</li>
-          <li class="card-text">Prix: 100 000 GNF</li>
-          <li class="card-text">Situation : A discuter</li>
-          <li class="card-text">Interesent pour: 12 personnes</li>
-      </ul>
-        <div class="d-flex justify-content-center align-items-center">
-          
-          <small class="text-muted">9 mins</small>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3">
-    <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top" src="../../assets/Image_projet/f4.JPG" alt="Card image cap">
-      <ul class="list-unstyled Lcard">
-        <li class="card-text font-size">Categorie: Location</li>
-        <li class="card-text">Lieux: Conakry</li>
-        <li class="card-text">Prix: 100 000 GNF</li>
-        <li class="card-text">Situation : A discuter</li>
-        <li class="card-text">Interesent pour: 12 personnes</li>
-    </ul>
-      <div class="card-body">
-        <div class="d-flex justify-content-center align-items-center">
-          <small class="text-muted">9 mins</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top" src="../../assets/Image_projet/95.JPG" alt="Card image cap">
-      <div class="card-body">
-        <ul class="list-unstyled Lcard">
-          <li class="card-text font-size">Categorie: Location</li>
-          <li class="card-text">Lieux: Conakry</li>
-          <li class="card-text">Prix: 100 000 GNF</li>
-          <li class="card-text">Situation : A discuter</li>
-          <li class="card-text">Interesent pour: 12 personnes</li>
-      </ul>
-        <div class="d-flex justify-content-center align-items-center">
-          
-          <small class="text-muted">9 mins</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
-      <img class="card-img-top" src="../../assets/Image_projet/98.JPG" alt="Card image cap">
-      <div class="card-body">
-        <ul class="list-unstyled Lcard">
-          <li class="card-text font-size">Categorie: Location</li>
-          <li class="card-text">Lieux: Conakry</li>
-          <li class="card-text">Prix: 100 000 GNF</li>
-          <li class="card-text">Situation : A discuter</li>
-          <li class="card-text">Interesent pour: 12 personnes</li>
-      </ul>
-        <div class="d-flex justify-content-center align-items-center">
-          
-          <small class="text-muted">9 mins</small>
         </div>
       </div>
     </div>

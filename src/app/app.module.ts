@@ -17,7 +17,7 @@ const routes:Routes=[
   {path:'offredemande',component:OffresDemandeComponent},
   {path:'home',component:HomeComponent},
   {path:'Detail',component:AboutComponent},
-  {path:'Detail-produit',component:DetailProduitsComponent},
+  {path:'offredemande/:id',component:DetailProduitsComponent},
   {path:'',component:HomeComponent}
 
 ];

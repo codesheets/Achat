@@ -7,29 +7,19 @@
     <br><br>
     <div class="row">
     <div class="col-4 mb-1">
-        <img src="https://via.placeholder.com/200" alt="img produit" class="border img-fluid" style="width: 20rem;height: 10rem;">
+    <img src={{img}} alt="img produit" class="border img-fluid" style="width: 20rem;height: 10rem;">
     </div>
     <div class="col-8">
-        <p style="font-size:2rem;font-weight: bolder;">Nom du produit</p>
-        <p style="font-size:large;">valeur du produit</p>
-        <p class="badge" style="font-size: 1rem;">Lieu</p>
-        <p>Situation</p>
+    <p style="font-size:2rem;font-weight: bolder;">Nom : {{nom}}</p>
+    <p style="font-size:large;">vaux : {{prix}}</p>
+    <p class="badge" style="font-size: 1rem;">Lieu :{{lieu}}</p>
+    <p>Situation : {{situation}}</p>
     </div>
     
     </div>
     <div style="width: 50rem;" class="border-top">
         <h3>Description</h3>
-        <p>4 Cartelettes premier jour </p>
-            
-         <p>Editions spéciales donne en plus une épreuve journée du timbre 1988 - 1989</p>
-            
-            
-           <p>prévoir frais de port si nécessaire , possibilité d’échange contre timbres après 2008
-            Vous pouvez grouper avec mes autres annonces pour frais d’envoi (voir même gratuité si achat de plusieurs lots)</p>
-            
-           <p>A prendre sur Joué les Tours</p>
-            
-            <p>Taper MR37 pour mes autres annonces – 084</p>
+        <p> {{description}} </p>
     </div>
-    <button type="submit" class="btn btn-primary">ça vous interesse ?</button>
+    <a class="btn btn-primary" href="Detail">ça vous interesse ?</a>
 </div>  
